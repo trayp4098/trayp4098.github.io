@@ -8,7 +8,14 @@ body {
     background-size: cover;
 }
 
+
 .wrapper { 
+    max-width: 1127px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper-2 { 
     max-width: 1127px;
     width: 100%;
     margin: 0 auto;
@@ -23,7 +30,19 @@ body {
 .w-2 {
     width: 50%;
     float: left;
+    
 }
+
+.w-8 {
+    width: 50%;
+    float: left;
+    margin-top: 0; 
+  }
+  
+  .parent-of-w-8 {
+    display: flex;
+    align-items: flex-start; 
+  }
 
 .w-3 {
     width: 33.33%;
@@ -160,7 +179,9 @@ body {
 
 .line {
     margin: 25px 0 10px 0;
+    margin-top: 0;
 }
+
 
 .footer_content {
     display: flex;
@@ -184,18 +205,57 @@ body {
     padding: 78px 0;
 }
 
+#seredina2 {
+    background: url(../image/Tomato.png) no-repeat center;
+    background-color: #F7F7F7;
+    font-size: 20px;
+    padding: 78px 0;
+}
+
 #logo {
     margin: 10px 0 0 0;
 }
 
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; 
+    border: 2px solid #4CAF50; 
+    color: #4CAF50; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    float: right;
+    font-size: 16px; 
+    cursor: pointer;
+    text-decoration: none; 
+}
+  
+  .download-button:hover {
+    background-color: #4CAF50; 
+    color: white; 
+}
+  
+  .pdf-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+    background-image: url('../image/pdf.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .pdf-icon {
+    font-size: 20px; 
+    margin-right: 10px;
+}
+
 #search {
-    border-bottom: 1px solid #324950;
+    border-bottom: 2px solid #324950;
     display: inline-block;
     max-width: 350px;
     width: 100%;
     margin: 10px 0 43px 0;
 }
-
 #search input {
     font-size: 16px;
     color: #324950;
@@ -204,21 +264,22 @@ body {
     max-width: 327px;
     height: 29px;
     width: 100%;
+    padding-bottom: 0;
+    
+}
+#search input::placeholder{
+color:#324950
+}
+#search button{
+background: url(../image/search.png) no-repeat center;
+font-size: 0;
+height: 18px;
+width: 18px;
+border: none;
+cursor: pointer;
+margin-bottom: 4px;
 }
 
-#search input::placeholder {
-    color: #324950
-}
-
-#search button {
-    background: url(../image/search.png) no-repeat center;
-    font-size: 0;
-    height: 18px;
-    width: 18px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 8px;
-}
 
 #categories {
     max-width: 1600px;
@@ -402,6 +463,220 @@ img {
     color: #777;
 }
 
+/* Product Page Styles */
+.bg-tomato-one {
+    background: #F7F7F7;
+    padding: 40px 0;
+}
+
+.green-titles {
+    color: #57984C;
+    margin-bottom: 0;
+    margin: 25px 0 15px;
+}
+
+.green-titles hr {
+    border: 1px solid #57984C;
+    margin: 5px 0;
+}
+
+.ul-tomatoone {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.ul-tomatoone li {
+    margin: 8px 0;
+    position: relative;
+}
+
+.ul-tomatoone li:before {
+    content: "•";
+    color: #57984C;
+    position: absolute;
+    left: -15px;
+}
+
+.img-tomato {
+    max-width: 450px;
+    margin: 20px auto;
+    display: block;
+}
+
+.btn-basket {
+    background: #57984C;
+    color: white!important;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background 0.3s;
+}
+
+.btn-basket:hover {
+    background: #467c3d;
+}
+
+.return {
+    margin-bottom: 30px;
+}
+
+.return a {
+    color: #57984c;
+    text-decoration: none;
+}
+
+.character {
+    line-height: 1.6;
+    display: block;
+    margin: 10px 0;
+}
+
+.text-content2-1 {
+    color: #57984C;
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.product-header h1 {
+    font-size: 2.4rem;
+    color: #2D3F45;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.product-header h2 {
+    color: #bd1919;
+    font-size: 1.4rem;
+    margin: 20px 0 40px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 60px;
+}
+
+.dash-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dash-list li {
+    position: relative;
+    margin: 12px 0;
+}
+
+.dash-list li::before {
+    content: "-";
+    position: absolute;
+    left: -15px;
+    color: #57984C;
+}
+
+.resistance-box {
+    background: #F8F8F8;
+    margin: 25px 0 15px;
+}
+
+.simple-list {
+    color: black; 
+    margin: 25px 0 15px;
+    padding-left: 0; 
+    list-style-position: inside; 
+}
+
+.simple-list li {
+    color: black; 
+    margin: 15px 0 10px;
+}
+
+.simple-list li::marker {
+    color: #57984C; 
+}
+
+.main-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-cta:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.main-cta:active {
+    transform: translateY(0);
+}
+
+.main-cta::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.color-label {
+    color: #E74C3C;
+    font-weight: 700;
+    border: 2px solid #E74C3C;
+    padding: 3px 15px;
+    display: inline-block;
+}
+
+.footer-links {
+    border-top: 2px solid #EAEAEA;
+    margin-top: 50px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-links strong {
+    margin: 0 25px;
+    font-weight: 700;
+    color: #2D3F45;
+}
+
+.product-img {
+    width: 350px;
+    height: 321px;
+    display: block;
+}
+
+.tight-spacing {
+    margin: 5px;  
+    padding: 5px; 
+}
+
+.flex-container {
+    display: flex;
+    gap: 5px; 
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px; 
+}
 .blocks,
 .table {
     display: flex;
@@ -425,6 +700,8 @@ img {
     color: #324950;
     margin: 0;
 }
+
+
 
 .link {
     text-decoration: none;
