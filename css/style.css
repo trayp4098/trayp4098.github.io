@@ -8,12 +8,113 @@ body {
     background-size: cover;
 }
 
+.bg_grey{
+    background-color: #f5f5f5;
+}
+
+.entry-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.contand h1 {
+    font-family: 'Roboto Slab', serif;
+    }
+    .contand a {
+    font-family: 'Roboto', serif;
+    }
+.primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.primary .pillar:first-child{
+    width: 30%;
+}
+.primary .pillar:last-child{
+    width: 55%;
+}
+
+.text-content5{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 142.7%;
+    color: #324950;
+}
+
+.text-conten6{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 142,7%;
+    color: #57984C;
+}
+
+.text-conten7{
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+}
+
+.text-conten7 a {
+    color: #57984C;
+	text-decoration: none;
+}
+
+
+.under_adresses{
+	border: none;
+    height: 1px;
+    background-color: #57984C;
+    margin-top: 5px; 
+	width: 100%;
+    transform: scaleX(1.5);
+}
+
+
 
 .wrapper { 
-    max-width: 1127px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    position: relative; 
+    z-index: 1;
 }
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.over_footer{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #57984C;
+    margin-top: 22px;
+}
+.over_footer hr{
+    width: 43%;
+    font-weight: bold;
+}
+.over_footer p{
+    margin: 0;
+}
+
 
 .wrapper-2 { 
     max-width: 1127px;
@@ -33,6 +134,9 @@ body {
     
 }
 
+
+
+
 .w-8 {
     width: 50%;
     float: left;
@@ -42,7 +146,7 @@ body {
   .parent-of-w-8 {
     display: flex;
     align-items: flex-start; 
-  }
+}
 
 .w-3 {
     width: 33.33%;
@@ -207,10 +311,14 @@ body {
 
 #seredina2 {
     background: url(../image/Tomato.png) no-repeat center;
-    background-color: #F7F7F7;
     font-size: 20px;
     padding: 78px 0;
+    width: 100%;  
+    background-color: #F5F5F5; 
+    position: relative;
 }
+
+
 
 #logo {
     margin: 10px 0 0 0;
@@ -463,7 +571,7 @@ img {
     color: #777;
 }
 
-/* Product Page Styles */
+
 .bg-tomato-one {
     background: #F7F7F7;
     padding: 40px 0;
@@ -519,7 +627,7 @@ img {
 }
 
 .return {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .return a {
@@ -558,6 +666,8 @@ img {
 .product-grid {
     display: flex;
     gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap
 }
 
 .dash-list {
@@ -706,3 +816,119 @@ img {
 .link {
     text-decoration: none;
 }
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 350px;
+    max-width: 1127px;
+    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-column {
+    display: flex;
+    max-width: 1127px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form {
+    max-width: 1127px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.entry-field {
+    margin-bottom: 5px;
+}
+
+.entry-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #324950;
+}
+
+.entry-field input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.entry-field select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.entry-field textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.section-divider {
+    height: 1px;
+    background: #eee;
+    margin: 25px 0;
+}
+
+select {
+    height: 46px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.captcha-section {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column
+}
+
+.captcha-box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 10px 0;
+}
+
+.submit-btn {
+    background: #57984C;
+    color: white;
+    padding: 8px 3px; 
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px; 
+    width: auto; 
+    transition: background 0.3s;
+}
+
+
+.submit-btn:hover {
+    background: #467c3d;
+}
+
+@media (max-width: 768px) {
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 1px;
+    }
+    
+    .captcha-box {
+        flex-direction: column;
+    }
+}
+
+
+
