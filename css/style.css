@@ -851,26 +851,58 @@ img {
     color: #324950;
 }
 
-.entry-field input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.entry-field select{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-}
+.entry-field input,
+.entry-field select,
 .entry-field textarea {
+    box-sizing: border-box;
+}
+
+/* Исправляем grid-гапы и максимальную ширину */
+.two-column-layout {
+    gap: 50px; /* Уменьшаем промежуток между колонками */
+    max-width: 90%; /* Делаем контейнер более адаптивным */
+    padding: 0 20px;
+}
+
+/* Оптимизация для мобильных устройств */
+@media (max-width: 1024px) {
+    .two-column-layout {
+        gap: 30px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .two-column-layout {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    /* Исправляем CAPTCHA-блок */
+    .captcha-box img {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    .captcha-box input {
+        width: 100%;
+    }
+}
+
+/* Гарантируем, что элементы формы не выходят за границы */
+.form-column {
+    overflow: hidden;
+}
+
+/* Улучшаем адаптацию текстовых полей */
+.entry-field input,
+.entry-field select,
+.entry-field textarea {
+    max-width: 100%;
     width: 100%;
-    padding: 1px;
+    padding: 10px;
+    font-size: 14px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 15px;
 }
 
 .section-divider {
