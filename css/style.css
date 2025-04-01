@@ -312,7 +312,7 @@ margin-bottom: 10px;
 background: linear-gradient(to bottom, #FFFACD, #98FB98, #9c9660);
 }
 
-#slider-tomato img {
+#slider-pears img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -389,13 +389,13 @@ text-decoration: none;
     padding: 20px 0;
 }
 
-.tomato-one h1{
+.pears-one h1{
     font-size: 54px;
     color: #324950;
     margin: 0;
     line-height: 148%;
 }
-.tomato-one h2{
+.pears-one h2{
     font-size: 54px;
     color: #57984C;
     margin: 0;
@@ -427,24 +427,24 @@ text-decoration: none;
     color: #324950;
 	line-height: 162,7%;
 }
-.ul-tomatoone{
+.ul-pearsone{
     color: #324950;
     padding: 0;
     margin: 0;
     padding-left: 20px;
 }
-.ul-tomatoone li{
+.ul-pearsone li{
     margin-bottom: 15px;
     color: #57984C
 }
-.ul-tomatoone li span{
+.ul-pearsone li span{
     color: #324950
 }
-.text-tomato-one{
+.text-pears-one{
     color: #324950;
 }
 
-.pdf-download-button {
+.buy-button {
     display: inline-flex;
     align-items: center;
     padding: 6px 32px;
@@ -462,31 +462,31 @@ text-decoration: none;
     margin-right: 20px;
 }
 
-.img-tomato{
+.img-pears{
  width: 100%;
 }
-.btn-pdf-tomato{
+.btn-pears-buy{
     text-align: end;
 }
 
 
 
-.tomato{
+.pears{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
-.tomato a{
+.pears a{
     display: contents;
 }
-.tomato img {
+.pears img {
     max-width: 92%;
     height: auto;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
-.tomato p{
+.pears p{
     text-align: center;
     color: #57984C;
     margin: 0;
@@ -496,11 +496,11 @@ text-decoration: none;
 	padding-bottom: 10px;
     background-color: #f7f4f0;
 }
-.tomato p a{  
+.pears p a{  
     color: #57984C;
 }
 
-.bg-tomato-one{
+.bg-pears-one{
     position: relative;
 	background: linear-gradient(to bottom, #FFFACD, #98FB98, #9c9660);
     padding-bottom: 220px; 
@@ -674,7 +674,7 @@ background-color: #f5f5f5;
     border-radius: 40px;
 	border: 2px solid #ccc;
 }
-.wrapper-tomato {
+.wrapper-pears {
     display: flex;
     flex-wrap: wrap;
     max-width: 1127px;
@@ -682,7 +682,7 @@ background-color: #f5f5f5;
     margin:0 auto;
 }
 
-.tomato-one{
+.pears-one{
     display: flex;
     flex-direction: row;
 }
