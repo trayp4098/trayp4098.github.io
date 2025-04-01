@@ -53,18 +53,6 @@
         <h1 class="text-content5">Contact us</h1>
         <p class="text-content2">×××××</p>
         
-		
-		
-          <div id="all-pears">
-            <div class="basket-wrapper"  v-if="cartVisible">
-              <div class="basket-item" v-for="item in product">
-                <div class="w-4"><img v-bind:src="item.image" alt="item.title"></div>
-                <div class="w-4">{{item.title}}</div>
-                <div class="w-4">{{item.short_text}}</div>
-                <div class="w-4" @click.prevent="removeFromCart(item.id)"><button class="btn-no-style">×</button></div>
-              </div>
-           </div>
-			
           <form @submit.prevent="makeOrder" v-if="formVisible">
             <div class="primary">
                 <div class="pillar">
@@ -128,18 +116,7 @@
             </div>
         </form>
 		
-		    <div v-if="!formVisible" class="form-info">
-              <p>Name: {{contactFields.name}}</p>
-              <p>companyName: {{contactFields.companyName}}</p>
-              <p>Position: {{contactFields.position}}</p>
-              <p>City: {{contactFields.city}}</p>
-              <p>Country: {{contactFields.country}}</p>
-              <p>Telephone: {{contactFields.telephone}}</p>
-              <p>Email: {{contactFields.email}}</p>
-              <p>You are a: {{contactFields.youAre}}</p>
-              <p>Other specify: {{contactFields.otherSpecify}}</p>
-              <p>Interested in: {{contactFields.interested}}</p>
-            </div>		
+		    	
     </div>
 </div>
 </div>
