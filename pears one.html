@@ -90,9 +90,13 @@
             <div class="w-2">
                 <img class="img-pears" :src="product.image" alt="">
                 <div class="btn-pears-buy">
-                    <a class="buy-button" href="#" >
+                    <a class="buy-button" href="#" @click.prevent="addToCart(product.id)" v-if="!btnVisible">
                         <span class="pdf-icon"></span>
                         Add to basket
+                    </a>
+					<a class="buy-button" href="contact us.html" v-if="btnVisible">
+                        <span class="pdf-icon"></span>
+                        Go to basket
                     </a>
 					
                 </div>
